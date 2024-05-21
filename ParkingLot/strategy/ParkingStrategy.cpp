@@ -1,8 +1,9 @@
 
-
-
+#include"../models/ParkingLot.cpp"
+#include"../models/Vehicle.cpp"
+#include"../models/Ticket.cpp"
 class ParkingStrategy{
 public:
 
-    virtual void park() = 0;
+    virtual Slot* park(ParkingLot* pl,Vehicle* vh) = 0;
 };

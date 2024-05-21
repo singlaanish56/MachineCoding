@@ -1,5 +1,6 @@
+#pragma once
 #include<string>
-#include<Vehicle.cpp>
+#include"Vehicle.cpp"
 
 
 
@@ -7,13 +8,13 @@ class Slot{
 private:
 std::string slotid;
 int slotNumber;
-std::string floorNumber;
+int floorNumber;
 VehicleType slotType;
 Vehicle* vehicle;
 bool isOccupied;
 
 public:
-    Slot(std::string& id, int slotNumber, int& floorNumber, VehicleType vt)
+    Slot(std::string id, int slotNumber, int floorNumber, VehicleType vt)
     {
         slotid = id;
         slotNumber=slotNumber;
@@ -23,7 +24,14 @@ public:
         isOccupied = false;
     }
 //getters
-
+    int getSlotNumber()
+    {
+        return slotNumber;
+    }
 //setters
-
+    void setVehicle(Vehicle* vh)
+    {
+        vehicle=vh;
+        isOccupied=true;
+    }
 };

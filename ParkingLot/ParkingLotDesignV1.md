@@ -32,3 +32,8 @@ ParkingLot
 ParkingStrategy
 -SimpleParkingStrategy, Picks the first floor and the first available slot
 
+Park Vehicle  / Unpark Vehicle
+- Adding it as the part of the parking manager
+- could also be a command 
+
+
